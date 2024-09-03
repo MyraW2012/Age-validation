@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/856/902/large_2x/asphalt-road-in-mountain-valley-landscape-illustration-nature-highway-through-meadow-and-trees-cartoon-background-vector.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+h2{
+    color: green;
+    font-size: 20px;
+}
+div{
+    width: 40%;
+    background-color: teal;
+    margin-left: 170px;
+    border-radius: 5px;
+    padding: 2px;
+}
+button{
+padding: 3px;
+}
+p{
+    font-weight: bold;
+}
+</style>
+</head>
+    <body>
+        <h2>Driving Allowance</h2>
+        <div>
+            <p>
+                <b>Enter your age</b>
+            </p>
+            <input type="number" id="div0">
+            <button onclick="demo()">This is my age!</button>
+            <p id="p12"></p>
+        </div>
+        <script>
+            function demo(){
+                var job = document.getElementById("div0").value;
+                if (job>15){
+                    document.getElementById("p12").innerHTML="You are valid to drive a car! <br>Congratulations!"
+                }
+                else{
+                    document.getElementById("p12").innerHTML="You are not valid to drive a car! <br>Sorry!"
+                }
+            }
+        </script>
+    </body>
+</html>
